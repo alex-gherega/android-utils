@@ -2,6 +2,7 @@ package expressive.harbinger.helpflipper;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Handler;
 import android.support.v4.view.GestureDetectorCompat;
 import android.util.AttributeSet;
@@ -15,6 +16,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 import expressive.harbinger.helpflipper.utils.Graphics;
 
@@ -55,6 +60,10 @@ public class VertivalHelpLayout extends LinearLayout {
 
     public VertivalHelpLayout setupLayout(String message, Bitmap image) {
 
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.PNG, 100, out);
+
+
         TextView tv = new TextView(getContext());
         tv.setPadding(50, 50, 50, 50);
         tv.setGravity(Gravity.CENTER_HORIZONTAL);
@@ -62,15 +71,22 @@ public class VertivalHelpLayout extends LinearLayout {
 
         ImageView iv = new ImageView(getContext());
         iv.setPadding(10, 10, 10, 10);
-        iv.setScaleType(ImageView.ScaleType.FIT_START);
-        iv.setImageBitmap(image);
+        iv.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        iv.setImageBitmap(BitmapFactory.decodeStream(new ByteArrayInputStream(out.toByteArray())));
 
+        try {
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        //image.recycle();
         return addWidgetView(tv).addWidgetView(iv);
     }
 
     public VertivalHelpLayout setParams () {
 
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT,
                 Graphics.getRowDimensions(getContext(), scale).y);
 
         setLayoutParams(lp);

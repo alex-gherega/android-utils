@@ -1,5 +1,6 @@
 package expressive.harbinger.helpflipper;
 
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,8 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import expressive.harbinger.helpflipper.utils.Graphics;
 
 public class HelpActivity extends AppCompatActivity {
 
@@ -18,16 +21,19 @@ public class HelpActivity extends AppCompatActivity {
         List<ViewGroup> layouts = new ArrayList<>();
 
         layouts.add(VertivalHelpLayout.defaultInstance(this,
-                "Food", BitmapFactory.decodeResource(getResources(),
-                        R.drawable.food_and_drink)));
+                "Food", Graphics.decodeSampledBitmapFromResource(this,
+                        R.drawable.swipe,
+                        100,100)));
 
         layouts.add(VertivalHelpLayout.defaultInstance(this,
-                "Clothes", BitmapFactory.decodeResource(getResources(),
-                        R.drawable.clothes)));
+                "Clothes", Graphics.decodeSampledBitmapFromResource(this,
+                        R.drawable.swipe,
+                        100,100)));
 
         layouts.add(VertivalHelpLayout.defaultInstance(this,
-                "Accomodation", BitmapFactory.decodeResource(getResources(),
-                        R.drawable.accomodation)));
+                "Accomodation", Graphics.decodeSampledBitmapFromResource(this,
+                        R.drawable.swipe,
+                        100,100)));
 
         getSupportFragmentManager().beginTransaction().add(R.id.activity_main_layout,
                 HelpFragment.newInstance(layouts),

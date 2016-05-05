@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="icons.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3793">
+      <stop
+         style="stop-color:#004b00;stop-opacity:1;"
+         offset="0"
+         id="stop3795" />
+      <stop
+         style="stop-color:#004b00;stop-opacity:0;"
+         offset="1"
+         id="stop3797" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793"
+       id="linearGradient3799"
+       x1="-1587.1428"
+       y1="551.52154"
+       x2="-870"
+       y2="551.52154"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.9657617,0,0,0.85319464,785.07866,-27.605113)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-207.85714"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1839"
+     inkscape:window-height="1050"
+     inkscape:window-x="81"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;fill-opacity:0.80586082;stroke:#000000;stroke-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M -697.1875 -113.34375 C -762.05635 -113.34375 -814.28125 -76.070612 -814.28125 -29.75 L -814.28125 1077.3125 C -814.28125 1123.6331 -762.05635 1160.9375 -697.1875 1160.9375 L -119.9375 1160.9375 C -55.068653 1160.9375 -2.84375 1123.6331 -2.84375 1077.3125 L -2.84375 -29.75 C -2.84375 -76.070612 -55.068653 -113.34375 -119.9375 -113.34375 L -697.1875 -113.34375 z M -797.375 12.125 L -22.625 12.125 L -22.625 964.03125 L -797.375 964.03125 L -797.375 12.125 z M -470.65625 1016 L -317.9375 1016 C -298.94321 1016 -283.65625 1032.8469 -283.65625 1053.7812 C -283.65625 1074.7156 -298.94321 1091.5938 -317.9375 1091.5938 L -470.65625 1091.5938 C -489.65054 1091.5938 -504.9375 1074.7156 -504.9375 1053.7812 C -504.9375 1032.8469 -489.65054 1016 -470.65625 1016 z "
+       id="rect2985"
+       inkscape:export-filename="/home/alex/development/programing/android/android-utils/art/swipe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#fffff3;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -182.45632,1029.9059 62.05555,0 0,37.5334 -40.20504,-1.1374 0,0 10.4883,-12.5111 -8.74023,11.3737 5.24415,12.5112 -4.37014,-11.3738"
+       id="path3761"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/alex/development/programing/android/android-utils/art/swipe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:none;stroke:#fffff3;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3763"
+       width="85.596054"
+       height="45.596046"
+       x="-698.51227"
+       y="1019.5642"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="/home/alex/development/programing/android/android-utils/art/swipe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:none;stroke:#fffff3;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3763-1"
+       width="85.596054"
+       height="45.596046"
+       x="-682.79803"
+       y="1032.4213"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="/home/alex/development/programing/android/android-utils/art/swipe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient3799);fill-opacity:1;stroke:#007600;stroke-width:18.15469933;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -738.06545,521.67371 67.7888,-133.41712 28.78727,28.59606 c 190.25872,-159.3634 341.00717,-109.29707 480.12157,2.4377 l 26.12584,-49.77542 70.450335,171.66036 -169.610435,-33.60475 28.88514,-34.65081 C -343.48285,340.44729 -448.33704,369.04406 -586.30296,489.98362 l 34.4038,35.56867 z"
+       id="path3783"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:export-filename="/home/alex/development/programing/android/android-utils/art/swipe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

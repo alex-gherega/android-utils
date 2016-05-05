@@ -1,6 +1,7 @@
 package expressive.harbinger.helpflipper;
 
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -77,6 +78,13 @@ public class HelpFragment extends Fragment
         });
     }
 
+//    @Override
+//    public void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//
+//        //getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+//    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -96,13 +104,13 @@ public class HelpFragment extends Fragment
 
         for (ViewGroup item: layouts) {
             setupGestureDetector(item);
-//            ScrollView sv = new ScrollView(getContext());
-//            sv.setLayoutParams(item.getLayoutParams());
-//
-//            sv.addView(item);
-//
-//            vf.addView(sv);
-            vf.addView(item);
+            ScrollView sv = new ScrollView(getContext());
+            sv.setLayoutParams(item.getLayoutParams());
+
+            sv.addView(item);
+
+            vf.addView(sv);
+            //vf.addView(item);
         }
 
 

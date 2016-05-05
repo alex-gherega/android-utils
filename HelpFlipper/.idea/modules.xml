@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HelpFlipper.iml" filepath="$PROJECT_DIR$/HelpFlipper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/help_animator/help_animator.iml" filepath="$PROJECT_DIR$/help_animator/help_animator.iml" />
     </modules>
   </component>
 </project>

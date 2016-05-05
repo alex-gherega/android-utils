@@ -1,25 +1,36 @@
 <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--tools:context="expressive.harbinger.helpflipper.HelpFragment">-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context="expressive.harbinger.helpflipper.HelpFragment">-->
 
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--> tools:context="com.example.toyo.viewflipperonclick.MainActivity">-->
+
+    <LinearLayout
+        android:id="@+id/containerViewFlipper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-       <!--> tools:context="com.example.toyo.viewflipperonclick.MainActivity">-->
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-            <ViewAnimator
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/viewFlipper">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ViewAnimator
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewFlipper">
 
-            </ViewAnimator>
-        </LinearLayout>
-    </RelativeLayout>
-<!--</FrameLayout>-->
+        </ViewAnimator>
+    </LinearLayout>
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKIP"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@id/containerViewFlipper"
+        android:gravity="right"/>
+</RelativeLayout>
+    <!--</FrameLayout>-->

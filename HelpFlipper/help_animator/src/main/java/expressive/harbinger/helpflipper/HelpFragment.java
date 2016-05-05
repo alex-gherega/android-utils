@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.ViewAnimator;
 import android.widget.ViewFlipper;
@@ -110,6 +112,7 @@ public class HelpFragment extends Fragment
             sv.addView(item);
 
             vf.addView(sv);
+
             //vf.addView(item);
         }
 

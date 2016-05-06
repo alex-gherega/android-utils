@@ -38,10 +38,10 @@ public class VertanimHelpLayout extends LinearLayout {
         super(context, attrs, defStyleAttr);
     }
 
-    public static VertanimHelpLayout defaultInstance(Context ctx, String message, int anim) {
+    public static VertanimHelpLayout defaultInstance(Context ctx, String message, GifView gv) {
         VertanimHelpLayout vhl = new VertanimHelpLayout(ctx);
         vhl.setParams();
-        vhl.setupLayout(message, anim);
+        vhl.setupLayout(message, gv);
 
         return vhl;
     }
@@ -54,7 +54,7 @@ public class VertanimHelpLayout extends LinearLayout {
         this.scale = scale;
     }
 
-    public VertanimHelpLayout setupLayout(String message, int anim) {
+    public VertanimHelpLayout setupLayout(String message, GifView gv) {
 
         TextView tv = new TextView(getContext());
         tv.setPadding(50, 50, 50, 50);
@@ -62,11 +62,12 @@ public class VertanimHelpLayout extends LinearLayout {
         tv.setText(message);
 
         LinearLayout ll = new LinearLayout(getContext());
-        ll.setLayoutParams(getLayoutParams());
+        ll.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
+                (int)(Graphics.getRowDimensions(getContext(), scale).y*0.7)));
         ll.setGravity(Gravity.CENTER_HORIZONTAL);
 
-        GifView gv = new GifView(getContext(), anim);
-        gv.setLayoutParams(ll.getLayoutParams());
+        gv.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
+                (int)(Graphics.getRowDimensions(getContext(), scale).y*0.7)));
         ll.addView(gv);
         //gv.setPadding(10, 10, 10, 10);
 

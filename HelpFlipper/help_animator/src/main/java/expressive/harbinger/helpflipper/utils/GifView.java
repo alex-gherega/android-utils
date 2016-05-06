@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 public class GifView extends View {
@@ -40,5 +41,19 @@ public class GifView extends View {
         int position = ((View) getParent()).getWidth() / 2 - movie.width() / 2;
         movie.draw(canvas, position,0);
         this.invalidate();
+    }
+
+    @Override
+    public void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+
+        movie = null;
+        try {
+            inputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        inputStream = null;
+
     }
 }

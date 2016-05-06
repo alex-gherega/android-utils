@@ -45,8 +45,6 @@ public class GifView extends View {
 
     @Override
     public void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-
         movie = null;
         try {
             inputStream.close();
@@ -55,5 +53,6 @@ public class GifView extends View {
         }
         inputStream = null;
 
+        super.onDetachedFromWindow();
     }
 }

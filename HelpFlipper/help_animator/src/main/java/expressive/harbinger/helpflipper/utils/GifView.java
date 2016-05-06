@@ -36,10 +36,12 @@ public class GifView extends View {
         if (movieStart == 0) { // first time
             movieStart = now;
         }
-        int relTime = (int)((now - movieStart) % movie.duration());
-        movie.setTime(relTime);
-        int position = ((View) getParent()).getWidth() / 2 - movie.width() / 2;
-        movie.draw(canvas, position,0);
+        if(movie != null) {
+            int relTime = (int) ((now - movieStart) % movie.duration());
+            movie.setTime(relTime);
+            int position = ((View) getParent()).getWidth() / 2 - movie.width() / 2;
+            movie.draw(canvas, position, 0);
+        }
         this.invalidate();
     }
 

@@ -49,11 +49,13 @@ public class GifView extends View {
     public void onDetachedFromWindow() {
         movie = null;
         try {
-            inputStream.close();
+            if(inputStream !=null)
+                inputStream.close();
+            else
+                inputStream = null;
         } catch (IOException e) {
             e.printStackTrace();
         }
-        inputStream = null;
 
         super.onDetachedFromWindow();
     }

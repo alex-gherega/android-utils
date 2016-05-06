@@ -36,7 +36,7 @@ public class HelpActivity extends AppCompatActivity {
                         100,100)));
 
 
-        layouts.add(VertanimHelpLayout.defaultInstance(this,"Hello anim", R.raw.start_screen_01));
+        // layouts.add(VertanimHelpLayout.defaultInstance(this,"Hello anim", R.raw.start_screen_01));
 
         getSupportFragmentManager().beginTransaction().add(R.id.activity_main_layout,
                 HelpFragment.newInstance(layouts),
